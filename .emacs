@@ -63,6 +63,9 @@
 (menu-bar-mode -1)
 
 ;;;hooks
+(add-to-list 'load-path "~/.emacs.d/ccapurso")
+(load "ccapurso_clojure")
+
 (add-hook 'clojure-mode-hook (lambda ()
 			       (cider-mode +1)
 			       (paredit-mode +1)
