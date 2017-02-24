@@ -2,7 +2,7 @@
 # name: ns
 # key: ns
 # --
-(ns `(flet ((try-src-prefix
+(ns (flet ((try-src-prefix
 	  (path src-pfx)
 	  (let ((parts (split-string path src-pfx)))
 	    (if (= 2 (length parts))
@@ -19,4 +19,4 @@
 	   (p4 (mapconcat '(lambda (x) x)
 		 (split-string p3 "/")
 		 ".")))
-      (replace-regexp-in-string "_" "-" p4)))`)
+      (replace-regexp-in-string "_" "-" p4))))
