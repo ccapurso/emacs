@@ -17,6 +17,7 @@
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(paredit . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(company . "melpa-stable") t)
+(add-to-list 'package-pinned-packages '(ido-vertical-mode . "melpa-stable") t)
 
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
@@ -43,6 +44,8 @@
 (unless (package-installed-p 'company)
   (package-install 'company))
 
+(unless (package-installed-p 'ido-vertical-mode)
+  (package-install 'ido-vertical-mode))
 
 (global-company-mode)
 ;; (add-hook 'cider-repl-mode-hook #'company-mode)
@@ -50,8 +53,6 @@
 
 (require 'yasnippet)
 (yas-global-mode 1)
-
-
 
 (eval-after-load 'paredit
   '(progn
@@ -135,3 +136,8 @@
  )
 
 (setq-default indent-tabs-mode nil)
+
+(require 'ido-vertical-mode)
+(ido-mode 1)
+(ido-vertical-mode 1)
+(setq ido-vertical-define-keys 'C-n-and-C-p-only)
