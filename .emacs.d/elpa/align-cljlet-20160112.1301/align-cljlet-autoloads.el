@@ -1,9 +1,9 @@
 ;;; align-cljlet-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "align-cljlet" "align-cljlet.el" (22298 8486
+;;;### (autoloads nil "align-cljlet" "align-cljlet.el" (22590 61237
 ;;;;;;  0 0))
 ;;; Generated autoloads from align-cljlet.el
 

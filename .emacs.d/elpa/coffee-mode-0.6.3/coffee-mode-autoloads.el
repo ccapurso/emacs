@@ -1,9 +1,9 @@
 ;;; coffee-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "coffee-mode" "coffee-mode.el" (22722 46806
+;;;### (autoloads nil "coffee-mode" "coffee-mode.el" (22514 21079
 ;;;;;;  0 0))
 ;;; Generated autoloads from coffee-mode.el
 
