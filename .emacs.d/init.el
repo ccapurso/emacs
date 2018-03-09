@@ -141,3 +141,5 @@
 (ido-mode 1)
 (ido-vertical-mode 1)
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
+
+(setq nrepl-use-ssh-fallback-for-remote-hosts 't)
