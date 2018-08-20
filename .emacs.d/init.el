@@ -127,7 +127,7 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (rainbow-delimiters yasnippet yaml-mode terraform-mode smex projectile php-mode paredit org mediawiki markdown-mode magit ido-vertical-mode ido-ubiquitous fixme-mode expand-region company coffee-mode cider better-defaults bats-mode align-cljlet ag)))
+    (cider rainbow-delimiters yasnippet yaml-mode terraform-mode smex projectile php-mode paredit org mediawiki markdown-mode magit ido-vertical-mode ido-ubiquitous fixme-mode expand-region company coffee-mode better-defaults bats-mode align-cljlet ag)))
  '(show-paren-delay 0))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
